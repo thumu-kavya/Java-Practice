@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class Studentinfo{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter your name: ");
+        String name = sc.nextLine();
+
+        System.out.print("Enter your age: ");
+        int age = sc.nextInt();
+
+        System.out.print("Enter your GPA: ");
+        double gpa = sc.nextDouble();
+        System.out.println("\nStudent Details:");
+        System.out.println("----------------");
+        System.out.printf("Name      : %s\n", name);
+        System.out.printf("Age       : %d\n", age);
+        System.out.printf("GPA       : %.2f\n", gpa);
+    }
+} 
