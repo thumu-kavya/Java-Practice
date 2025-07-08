@@ -1,0 +1,12 @@
+public class ContainsWord {
+    public static void main(String[] args) {
+        String str = "I love Java placement prep";
+        String word = "Java";
+
+        if (str.contains(word)) {
+            System.out.println("Word found!");
+        } else {
+            System.out.println("Word not found.");
+        }
+    }
+}
