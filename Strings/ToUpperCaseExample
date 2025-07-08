@@ -1,0 +1,9 @@
+public class ToUpperCaseExample {
+    public static void main(String[] args) {
+        String str = "bangaram";
+
+        String upperStr = str.toUpperCase();
+
+        System.out.println("Uppercase String: " + upperStr);
+    }
+}
