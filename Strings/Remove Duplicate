@@ -1,0 +1,18 @@
+import java.util.HashMap;
+
+public class  Remove Duplicate
+{
+	public static void main(String[] args) {
+	   String s = "kavya";
+	   String c = "";
+	   for(int i=0;i<s.length();i++){
+	       char ch = s.charAt(i);
+	       if(c.indexOf(ch) == -1){
+	           c += ch;
+	       }
+	   }
+	       
+            System.out.println(c);
+
+	}
+}
