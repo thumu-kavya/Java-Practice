@@ -1,0 +1,19 @@
+public class IsEven{
+    public static boolean isEven(int num){
+      
+        return num%2==0;
+    }
+
+	public static void main(String[] args) {
+            
+            int number = 7;
+            if (isEven(number)){
+                System.out.println("evennumber:"+number);
+            }
+            else{
+                	System.out.println("odd number:"+number);
+            }
+
+	
+	}
+}
