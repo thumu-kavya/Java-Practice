@@ -1,0 +1,18 @@
+
+public class PrintReverse {
+
+   
+    public static void printRev(int n) {
+        if (n == 0) {
+            return; 
+        }
+        System.out.print(n + " ");
+        printRev(n - 1);           
+    }
+
+    public static void main(String[] args) {
+        int number = 5;
+        System.out.print("Numbers from " + number + " to 1: ");
+        printRev(number);
+    }
+}
