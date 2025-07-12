@@ -1,0 +1,20 @@
+public class ThisKeyword{
+    String name;
+    int rollno;
+    public Student(String name,int rollno){
+        this.name = name;
+        this.rollno = rollno;
+        System.out.println(this);
+    }
+    public void studentDetails(){
+        System.out.println("name:"+name);
+        System.out.println("rollno:"+rollno);
+
+    }
+    public static void main (String args[]){
+        Student obj = new Student("kavya",61);
+        obj.studentDetails();
+        Student s1 = new Student("vani",44);
+        s1.studentDetails();
+    }
+}
