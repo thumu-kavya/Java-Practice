@@ -1,0 +1,20 @@
+class Animal{
+        void eat(){
+            System.out.println("i can eat");
+        }
+    }
+    
+class Dog extends Animal {
+    @Override
+    void eat() {
+        System.out.println("Dog eats bones");   
+    }
+     }
+public class Override{
+    public static void main (String args[]){
+       Dog d = new Dog();
+       d.eat();
+       
+}
+
+    }
