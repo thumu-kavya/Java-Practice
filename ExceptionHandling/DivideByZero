@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class DivideByZero
+{
+	public static void main(String[] args) {
+	    Scanner sc = new Scanner(System.in);
+		int num = sc.nextInt();
+		int den = sc.nextInt();
+		try{
+		    int result = num/den;
+		    System.out.println(result);
+		}
+		catch(ArithmeticException e){
+		    System.out.println("can't divided by zero");
+		}
+		System.out.println("program is continuos");
+	}
+}
