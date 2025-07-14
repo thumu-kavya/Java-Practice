@@ -1,0 +1,12 @@
+public class ThrowsException  {
+
+    public static void readData() throws Exception {
+        throw new Exception("❌ Error: Unable to read data");
+    }
+
+    public static void main(String[] args) throws Exception {
+        readData(); 
+
+        System.out.println("✅ Program continues..."); 
+    }
+}
