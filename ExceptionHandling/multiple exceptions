@@ -1,0 +1,18 @@
+public class  multiple exceptions
+{
+	public static void main(String[] args) {
+	  int arr[] = {10,20,30,40,50};
+	  try{
+	      System.out.println(arr[9]);
+	     int result = 100/0;
+	     System.out.println(result);
+	  }
+	  catch(ArrayIndexOutOfBoundsException  e){
+	      System.out.println("error: you are tying to access an index doesnt exist in the array");
+	  }
+	  catch(ArithmeticException e){
+	      System.out.println("error:can't divided by zero");
+	  }
+	  System.out.println("program continuos");
+	}
+}
