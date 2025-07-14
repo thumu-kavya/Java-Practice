@@ -1,0 +1,19 @@
+public class FinallyBlock
+{
+	public static void main(String[] args) {
+        int a =3;
+        int b = 0;
+        try{
+	     int length = a/b;
+	     System.out.println(length);
+	     
+	 }
+	 catch(ArithmeticException e){
+	     System.out.println("Error: Cannot divide by zero!");
+	 }
+	 finally{
+	     System.out.println("✅ Cleanup done. Thank you!");
+	 }
+	 System.out.println("Program continues...");
+    }
+}
