@@ -1,0 +1,21 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+public class RemoveNameFromList{
+    public static void main(String args[]){
+        ArrayList<String>students = new ArrayList<>();
+            students.add("kavya");
+            students.add("reddy");
+            Scanner sc = new Scanner(System.in);
+            String removes = sc.nextLine();
+          if(students.contains(removes)){
+              students.remove(removes);
+              System.out.println(removes);
+          }
+          else{
+              System.out.println("name not found in the list");
+          }
+          for(String name : students){
+            System.out.println(name);
+        }
+    }
+}
