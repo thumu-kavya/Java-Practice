@@ -1,0 +1,10 @@
+import java.util.HashSetduplicate;
+public class List{
+    public static void main(String args[]){
+        HashSet<String>students = new HashSet<>();
+            students.add("kavya");
+            students.add("reddy");
+            students.add("kavya");
+            System.out.println(students);
+    }
+}
