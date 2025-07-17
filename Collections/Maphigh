@@ -1,0 +1,24 @@
+import java.util.HashMap;
+import java.util.Map;
+
+public class Maphigh {
+    public static void main(String[] args) {
+        HashMap<String, Integer> students = new HashMap<>();
+        students.put("Kavya", 85);
+        students.put("Ravi", 92);
+        students.put("Anu", 78);
+        students.put("Rahul", 90);
+        String topStudent = "";
+        int highestMarks = 0;
+        for (Map.Entry<String, Integer> entry : students.entrySet()) {
+            String name = entry.getKey();
+            int marks = entry.getValue();
+
+            if (marks > highestMarks) {
+                highestMarks = marks;
+                topStudent = name;
+            }
+        }
+        System.out.println("Topper: " + topStudent + " with marks: " + highestMarks);
+    }
+}
