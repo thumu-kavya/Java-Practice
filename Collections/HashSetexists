@@ -1,0 +1,16 @@
+import java.util.HashSet;
+public class HashSetexists{
+    public static void main(String args[]){
+        HashSet<String>students = new HashSet<>();
+            students.add("kavya");
+            students.add("reddy");
+            students.add("kavya");
+           if(students.contains("reddy")){
+               System.out.println(" reddy is in the set");
+           }
+           else{
+                System.out.println(" reddy is not in the set");
+
+           }
+    }
+}
